@@ -1,4 +1,13 @@
 type cardPoint = [number,number];
+
+/**
+ * Recibe dos puntos y el tamaño de un tablero, y indica los pasos que hay que recorrer para llegar
+ * desde el inicio hasta el fin.
+ * @param X, @param Y,las dimensiones del tablero 
+ * @param initPoint, @param endPoint el punto de inicio y el punto de fin.
+ * @return devuelve un vector con los pasos para llegar desde el punto inicial al final.
+ */
+
 export function agent(X:number,Y:number,initPoint: cardPoint, endPoint: cardPoint){
     let result = [];
     let north:cardPoint = [1,0];

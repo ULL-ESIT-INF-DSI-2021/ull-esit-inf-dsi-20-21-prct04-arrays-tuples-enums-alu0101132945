@@ -1,3 +1,9 @@
+/**
+ * Recibe un vector de strings y numbers para devolver la media y la concatencación de las strings.
+ * @param MaC Vector de strings y numbers con los valores con los que se haran la media y la concatenación.
+ * @return devuelve el vector con la concatenación y la media.
+ */
+
 export function meanAndConcatenate(MaC){
     let concatene: string= "";
     let mean: number = 0;

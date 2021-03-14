@@ -1,3 +1,9 @@
+/**
+ * Recibe 2 strings y devuelve el valor de las resistencias.
+ * @param band1, @param band2: strings con las resistencias.
+ * @return devuelve el valor de la resistencias.
+ */
+
 export function decodeResistor(band1: string,band2: string){
     enum resistance {negro,marron,rojo,naranja,amarillo,verde,azul,violeta,gris,blanco};
     let resistance1: number;

@@ -1,5 +1,11 @@
 type PointN = [number,number,number,...number[]];
 
+/**
+ * Recibe dos puntos y los suma.
+ * @param PointN1, @param PointN2 los 2 puntos que van a ser sumados.
+ * @return devuelve el valor de la suma de los dos puntos.
+ */
+
 export function pointNSum(PointN1: PointN,PointN2: PointN){
     let sumResult:PointN = [0,0,0];
     if(pointN1.length != pointN2.length){
@@ -12,6 +18,12 @@ export function pointNSum(PointN1: PointN,PointN2: PointN){
     return sumResult;
 }
 
+/**
+ * Recibe un punto y lo multiplica por un valor.
+ * @param Point1, @param numMult el punto y el valor que lo va a multiplicar.
+ * @return devuelve el valor de la multiplicación.
+ */
+
 export function pointNProd(PointN:PointN,numMult: number){
     let prodResult:PointN = [0,0,0];
     for(let i = 0; i < PointN.length; i++){
@@ -19,6 +31,12 @@ export function pointNProd(PointN:PointN,numMult: number){
     }
     return prodResult;
 }
+
+/**
+ * Recibe dos puntos y calcula la distancia euclidea.
+ * @param Point1, @param Point2 los 2 puntos que de los que se va a calcular la distancia.
+ * @return devuelve el valor de la distancia euclidea.
+ */
 
 export function pointNEuc(PointN1:PointN, PointN2:PointN){
     if(pointN1.length != pointN2.length){
